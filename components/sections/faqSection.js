@@ -1,36 +1,18 @@
-'use client';
-
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
-import { useRef, useEffect } from 'react';
-import { AnimatePresence, motion, easeOut, useAnimation, useInView } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { FaqArrow, FaqIcon } from '../utilities/icons';
 import HeadingTags from '../utilities/headingTags';
 import { faqItems } from '@/contents';
 
 const FAQ = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-    const controls = useAnimation();
-
-    useEffect(() => {
-        if (isInView) {
-        controls.start(() => ({
-            opacity: 1,
-            y: 1,
-            x: 1,
-            transition: {
-            duration: 2,
-            ease: 'easeInOut',
-            },
-        }));
-        }
-    }, [isInView, controls]);
 
     return (
-        <section ref={ref} className='py-16 px-2 md:px-4 lg:px-8'>
+        <section className='py-16 px-2 md:px-4 lg:px-8'>
             <motion.div 
-            initial={{ opacity: 0, y: 100 }}
-            animate={controls}
+            initial={{y: 100, opacity: 0}}
+            whileInView={{y: 0, opacity: 1}}
+            viewport={{once: true}}
+            transition={{ duration: 1, ease: 'easeInOut'}}
             className="flex flex-col w-full items-center my-20">
                 <HeadingTags icon={FaqIcon} content={"FAQ"}/>
                 <hr className="border my-2 w-full"/>
@@ -52,7 +34,7 @@ const FAQ = () => {
                                         initial={{opacity: 0, y: -20}}
                                         animate={{opacity: 1, y: 0}}
                                         exit={{opacity: 0, y: -20}}
-                                        transition={{duration: 0.5, ease: easeOut}}
+                                        transition={{duration: 0.5, ease: 'easeInOut'}}
                                         >
                                             {item.a}
                                         </motion.div>

@@ -1,7 +1,4 @@
-'use client';
-
-import { useRef, useEffect } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import TestimonialCard from "../utilities/testimonialCard";
 import HeadingTags from "../utilities/headingTags";
 import { TestimonialIcon } from "../utilities/icons";
@@ -9,29 +6,14 @@ import Button from '../utilities/button';
 
 
 const TestimonialSection = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
-    const controls = useAnimation();
-
-    useEffect(() => {
-        if (isInView) {
-        controls.start(() => ({
-            opacity: 1,
-            y: 1,
-            x: 1,
-            transition: {
-            duration: 2,
-            ease: 'easeInOut',
-            },
-        }));
-        }
-    }, [isInView, controls]);
 
   return (
-    <section ref={ref} className="py-20 px-2 md:px-4 lg:px-8">
+    <section className="py-20 px-2 md:px-4 lg:px-8">
       <motion.div 
-      initial={{ opacity: 0, y: 100 }}
-      animate={controls}
+      initial={{y: 100, opacity: 0}}
+      whileInView={{y: 0, opacity: 1}}
+      viewport={{once: true}}
+      transition={{ duration: 1, ease: 'easeInOut'}}
       className="flex flex-col w-full items-center my-20">
           <HeadingTags icon={TestimonialIcon} content={"Testimonials"}/>
           <hr className="border my-2 w-full"/>

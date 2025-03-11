@@ -13,8 +13,8 @@ const Stats = () => {
     if (isInView) {
       controls.start((i) => ({
         opacity: 1,
-        y: 1,
-        x: 1,
+        y: 0,
+        x: 0,
         transition: {
           duration: 1,
           delay: i * 1, // Stagger animations
@@ -66,9 +66,9 @@ const Stats = () => {
   };
 
   return (
-    <section className="bg-blue-strong px-2 py-16 mt-10 lg:px-8 relative z-0">
+    <section className="bg-blue-strong px-2 py-16 mt-10 lg:px-8 relative z-0 overflow-clip">
       <div className="inset-0 bg-[url('/grains.jpeg')] bg-cover bg-center opacity-10 absolute -z-20"></div>
-      <motion.div 
+      <motion.div
       initial={{ opacity: 0, x: 100 }}
       animate={controls}
       className="flex flex-col text-center">
@@ -80,7 +80,7 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 100 }}
               animate={controls}
               custom={index}
               className="space-y-4"
