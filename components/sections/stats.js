@@ -67,7 +67,7 @@ const Stats = () => {
 
   return (
     <section className="bg-blue-strong px-2 py-16 mt-10 lg:px-8 relative z-0 overflow-clip">
-      <div className="inset-0 bg-[url('/grains.jpeg')] bg-cover bg-center opacity-10 absolute -z-20"></div>
+      <div className="inset-0 bg-[url('/grainy.jpeg')] bg-cover bg-center opacity-10 absolute -z-20"></div>
       <motion.div
       initial={{ opacity: 0, x: 100 }}
       animate={controls}
@@ -88,7 +88,7 @@ const Stats = () => {
               <div className="text-5xl lg:text-8xl font-bold text-blue-extraLight">
                 <AnimatedNumber value={stat.value} unit={stat.unit} />
               </div>
-              <p className="text-lg text-white-light">{stat.text}</p>
+              <p className="text-md text-white-light">{stat.text}</p>
             </motion.div>
           ))}
         </div>

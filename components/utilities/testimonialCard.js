@@ -54,7 +54,7 @@ const TestimonialCard = () => {
               <SwiperSlide key={item.name}>
                   <div className="border-4  rounded-xl relative px-4 py-8 md:px-8 md:py-10">
                     <div className="flex flex-col gap-4">
-                      <h3 className="text-black-light italic z-10">{item.content}</h3>
+                      <h3 className="text-black-light text-md italic z-10">{item.content}</h3>
                       <p className="text-lg italic font-bold text-black-light">{item.name}</p>
                     </div>
                     <div className="absolute -top-1 -left-1 pr-6 pb-6 bg-white-normal">

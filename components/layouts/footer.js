@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex flex-col gap-16 lg:gap-24 lg:flex-row lg:justify-center items-center mt-6">
                 <div className="lg:w-1/3 flex flex-col gap-4">
                     <Link href="/">
-                        <Image src="/logo1.png" alt="logo" width={150} height={150} className="object-contain"/>
+                        <Image src="/logo1.png" alt="logo" width={100} height={100} className="object-contain"/>
                     </Link>
 
                     <p className="text-black-strong">We prioritize building exceptional digital solutions that set your brand apart.</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="lg:w-1/3">
+                <div className="lg:w-1/3 w-full">
                     <h3 className="text-black-strong lg:text-lg font-extrabold">Let's Connect</h3>
                     <div className="mt-4 flex flex-col gap-3 lg:gap-6">
                         {footerContacts.map((item) => (
@@ -39,20 +39,20 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="lg:w-1/3">
+                <div className="lg:w-1/3 w-full">
                     <h3 className="text-black-strong lg:text-lg font-extrabold">Quick Links</h3>
                     <div className="mt-4 flex flex-col gap-3 lg:gap-6">
                         {navLinks.map((link) => (
-                            <Link href={link.href} key={link.label} className="">
-                                <p>{link.label}</p>
+                            <Link href={link.href} key={link.label}>
+                                <p className="text-black-strong">{link.label}</p>
                             </Link>
                         ))}
                     </div>
                 </div>
             </div>
             
-            <div className="mt-16 py-6">
-                    <p className="tracking-wide">&copy; 2025 Kymaa. All Rights Reserved.</p>
+            <div className="mt-16 py-6 text-black-strong">
+                    <p className="tracking-wide text-black-strong">&copy; 2025 Kymaa. All Rights Reserved.</p>
             </div>
         </footer>
     )

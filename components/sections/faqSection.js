@@ -19,7 +19,7 @@ const FAQ = () => {
                 <h2 className="text-black-strong text-[25px] font-bold lg:text-[55px] text-center">Because, You Need To Know</h2>
             </motion.div>
             {faqItems.map((item, index) => (
-                <Disclosure key={index} className="p-2 rounded-xl mb-6 bg-white-strong/60 backdrop-blur shadow-white-light shadow-sm md:w-2/3 mx-auto">
+                <Disclosure key={index} className="p-2 mb-6 border-b-2 border-black-extraLight md:w-2/3 mx-auto">
                     {({ open }) => (
                         <div>
                             <DisclosureButton className="group py-2 flex justify-between w-full focus:outline-0">
@@ -29,7 +29,7 @@ const FAQ = () => {
 
                             <AnimatePresence>
                                 {open && (
-                                    <DisclosurePanel static className="text-black-light">
+                                    <DisclosurePanel static className="text-black-light text-md">
                                         <motion.div
                                         initial={{opacity: 0, y: -20}}
                                         animate={{opacity: 1, y: 0}}

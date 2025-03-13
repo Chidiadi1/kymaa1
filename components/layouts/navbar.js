@@ -14,13 +14,13 @@ const Navbar = () => {
 
     return (
         <header className="w-full relative">
-            <div className="fixed mx-3 mt-3 lg:mx-7 right-0 left-0 flex justify-between items-center px-5 py-3 md:px-8 lg:px-16 bg-white-strong/60 backdrop-blur rounded-3xl z-20">
+            <div className="fixed mx-3 mt-3 lg:mx-7 right-0 left-0 flex justify-between items-center px-5 py-2 md:px-8 lg:px-16 bg-white-strong/60 backdrop-blur rounded-3xl z-20">
                 <Link href='/'>
-                    <Image src='/logo1.png' alt="logo" width={130} height={130} className="object-contain"/>
+                    <Image src='/logo1.png' alt="logo" width={100} height={100} className="object-contain"/>
                 </Link>
 
                 <div className="border-2 border-black-light rounded-md" onClick={() => setToggleMenu((prev) => !prev)}>
-                    <MdMenu className="text-3xl text-black-light lg:hidden"/>
+                    <MdMenu className="text-2xl text-black-light lg:hidden"/>
                 </div>
 
                 
