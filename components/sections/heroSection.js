@@ -3,12 +3,15 @@
 import { motion } from 'framer-motion';
 import { FaArrowRight } from "react-icons/fa";
 import HeroSectionOrbit from "../utilities/heroSectionOrbit";
+import Image from 'next/image';
+import Button from '../utilities/button';
+import { AngleArrow } from '../utilities/icons';
 
 const HeroSection = () => {
     
     return(
-        <section className=" px-2 lg:px-5 flex flex-col items-center relative justify-center w-full  h-screen bg-gradient-to-t from-[#ffffff] to-blue-strong/10 overflow-clip">
-            <div className="items-center h-auto pb-20">
+        <section className=" px-2 lg:px-5 flex flex-col items-center relative justify-center w-full bg-gradient-to-t from-[#ffffff] to-blue-strong/10 overflow-clip">
+            <div className="items-center h-auto">
                 <div className="size-[420px] hero_section_ring"></div>
                 <div className="size-[620px] hero_section_ring"></div>
                 <div className="size-[820px] hero_section_ring"></div>
@@ -31,32 +34,35 @@ const HeroSection = () => {
                     <div className="size-16 rounded-full bg-blue-extraLight"></div>
                 </HeroSectionOrbit>
 
-                <div className="text-center pt-48">
-                    <motion.div
-                    initial={{x: -100, opacity: 0}}
-                    whileInView={{x: 0, opacity: 1}}
-                    viewport={{once: true}}
-                    transition={{ duration: 1, ease: 'easeInOut'}}
-                     className= "bg-gradient-to-r from-blue-light to-blue-strong inline-flex flex-col lg:flex-row gap-5 bg-clip-text">
-                        <h3 className= "text-transparent font-extrabold text-black-strong text-3xl lg:text-6xl  lg:border-r-4 tracking-wide">Seamless Digital Solutions.</h3>
-                        <h3 className= "text-transparent font-extrabold text-black-strong text-3xl lg:text-6xl tracking-wide">Crafted for Your Success.</h3>
-                    </motion.div>
-                </div>
-                <div className="text-center my-7 mx-3 lg:my-14 flex justify-center  ">
+                
+                <motion.div
+                initial={{x: -100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1}}
+                viewport={{once: true}}
+                transition={{ duration: 1, ease: 'easeInOut'}}
+                className='relative text-center pt-48 w-2/3 mx-auto'
+                >
+                    <h1 className= "font-extrabold text-black-strong text-4xl md:text-6xl lg:text-8xl tracking-wide">Seamless digital <span className='italic'>solutions</span> crafted for <span className='italic'>your success</span></h1>
+                    <div className='absolute -bottom-7 md:-bottom-20 lg:-bottom-24 lg:right-0 w-full'>
+                        <img src='/line.png' alt="line" width={250} height={130} className="w-full object-contain"/>
+                    </div>
+                </motion.div>
+
+                <div className="text-center mt-20 md:mt-24 lg:mt-40 mx-4 flex justify-center  ">
                     <motion.h2
                     initial={{x: 100, opacity: 0}}
                     whileInView={{x: 0, opacity: 1}}
                     viewport={{once: true}}
                     transition={{ duration: 1, ease: 'easeInOut'}}
-                    className="text-black-light text-lg lg:text-xl items-center tracking-wide w-full max-w-screen-md">We are your go-to agency for high-performing websites and mobile apps, graphic design, and strategic SEO services. We collaborate closely with you to deliver tailored solutions that drive growth and set you apart.</motion.h2>
+                    className="text-black-light text-md lg:text-xl items-center tracking-wide w-full max-w-screen-sm">We are your go-to digital agency. We collaborate closely with you to deliver tailored solutions that drive growth and set you apart.</motion.h2>
                 </div>
                 <motion.button
                 initial={{x: -100, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
-                className="mx-auto flex items-center gap-3 text-lg lg:text-xl border rounded-xl bg-blue-strong text-white-strong py-3 px-5 lg:px-7 lg:py-4 tracking-wider "
-                 >Get a free consultation<span><FaArrowRight className="-rotate-45"/></span></motion.button>
+                className="mx-auto mt-20 flex items-center gap-3 text-md lg:text-lg border rounded-full bg-blue-light text-white-strong py-5 px-5 lg:px-7 lg:py-6 tracking-wider"
+                 >Free consultation<span><FaArrowRight className="-rotate-45"/></span></motion.button>
             </div>
         </section>
     )

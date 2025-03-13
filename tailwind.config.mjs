@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -13,7 +15,8 @@ export default {
       colors: {
         black: {
           strong: '#242424',
-          light: '#666666'
+          light: '#666666',
+          extraLight: '#d2d2d2'
         },
         blue: {
           strong: '#00244e',
@@ -26,6 +29,21 @@ export default {
           light: '#a1a1aa'
         }
       },
+
+      animation: {
+        'tape-animation': 'tape-animation 1s linear infinite'
+      },
+
+      keyframes: {
+        'tape-animation': {
+          '0%': {
+            transform: 'translateX(0%)'
+          },
+          '100%': {
+            transform: 'translateX(-50%)'
+          }
+        }
+      }
     },
   },
   plugins: [],

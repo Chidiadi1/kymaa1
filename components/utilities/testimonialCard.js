@@ -70,10 +70,10 @@ const TestimonialCard = () => {
 
           {/* Buttons to control slides */}
         <div className="absolute -top-7 right-0 flex gap-2">
-          <button className="  custom-prev left-0 top-1/2 -translate-y-1/2 text-white   rounded-full z-10 bg-blue-strong text-white-strong">
+          <button className="  custom-prev left-0 top-1/2 -translate-y-1/2 text-white   rounded-full z-10 bg-black-strong text-white-strong">
             <ArrowLeft className="size-9"/>
           </button>
-          <button className="  custom-next right-0 top-1/2 -translate-y-1/2 text-white rounded-full z-10 bg-blue-strong text-white-strong">
+          <button className="  custom-next right-0 top-1/2 -translate-y-1/2 text-white rounded-full z-10 bg-black-strong text-white-strong">
             <ArrowRight className="size-9" />
           </button>
         </div>

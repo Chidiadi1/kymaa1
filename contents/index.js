@@ -7,6 +7,11 @@ export const navLinks = [
     { href: "/contact", label: "Contact Us" }
 ]
 
+/* EDIT TAPE CAROUSEL CONTENTS HERE */
+export const tapeContent = [
+    "ecommerce", "web design", "scalable", "responsive", "mobile app", "seo", "secure", "user friendly"
+]
+
 export const footerSocialIcons = [
     { label: "facebook", href: "#pageTop", icon: <FaFacebook /> },
     { label: "twitter", href: "#pageTop", icon: <FaTwitter /> },

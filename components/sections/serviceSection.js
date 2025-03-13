@@ -7,7 +7,7 @@ import { mobAppContent, mobAppTitle, webDevContent, webDevTitle, seoTitle, seoCo
 const ServiceSection = () => {
 
     return (
-        <section className="mt-20 lg:mt-32 px-2 md:px-4 lg:px-8 overflow-clip">
+        <section className="mt-24 lg:mt-40 px-2 md:px-4 lg:px-8 overflow-clip">
             <motion.div
             initial={{y: 100, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
@@ -26,10 +26,10 @@ const ServiceSection = () => {
                 viewport={{once: true}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
                 className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 mt-10">
-                    <ServiceCard icon={WebsiteIcon} title={webDevTitle} content={webDevContent}/>
-                    <ServiceCard icon={AppIcon} title={mobAppTitle} content={mobAppContent}/>
-                    <ServiceCard icon={SeoIcon} title={seoTitle} content={seoContent}/>
-                    <ServiceCard icon={GraphicIcon} title={graphicTitle} content={graphicContent}/>
+                    <ServiceCard icon={WebsiteIcon} title={webDevTitle} content={webDevContent} className="bg-[#ede0ea]"/>
+                    <ServiceCard icon={AppIcon} title={mobAppTitle} content={mobAppContent} className="bg-[#dcddf6]"/>
+                    <ServiceCard icon={SeoIcon} title={seoTitle} content={seoContent} className="bg-[#e2e5ed]"/>
+                    <ServiceCard icon={GraphicIcon} title={graphicTitle} content={graphicContent} className="bg-[#c7c5cb]"/>
                 </motion.div>
             </div>
         </section>
