@@ -22,7 +22,7 @@ const TestimonialSection = () => {
       <TestimonialCard />
 
       <div className='mt-20 flex justify-center'>
-        <Button content={"Get a Quote"} textColor={'#f0f0f0'} bgColor={'#00244e'}/>
+        <Button content={"Get a Quote"} textColor={'#f0f0f0'} bgColor={'#0678ff'}/>
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <header className="w-full relative">
-            <div className="fixed mx-3 mt-3 lg:mx-7 right-0 left-0 flex justify-between items-center px-5 py-2 md:px-8 lg:px-16 bg-white-strong/60 backdrop-blur rounded-3xl z-20">
+            <div className="sticky mt-3 lg:mx-7 right-0 left-0 flex justify-between items-center px-5 py-2 md:px-8 lg:px-16 bg-white-strong/60 backdrop-blur rounded-3xl z-20">
                 <Link href='/'>
                     <Image src='/logo1.png' alt="logo" width={100} height={100} className="object-contain"/>
                 </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col items-center gap-10 mt-20">
                         {navLinks.map((link)=> (
-                            <Link key={link.label} href={link.href} className="text-xl py-2 border-b-2 border-black-light text-black-strong font-bold">
+                            <Link key={link.label} href={link.href} className="text-xl py-2 text-black-strong font-bold">
                                 {link.label}
                             </Link>
                         ))}
