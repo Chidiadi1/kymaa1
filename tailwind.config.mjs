@@ -1,4 +1,5 @@
-
+/* import { Italiana, Montserrat } from 'next/font/google'; */
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -30,6 +31,12 @@ export default {
         }
       },
 
+      fontFamily: {
+        montserrat: ['Montserrat', ...fontFamily.sans],
+        italiana: ['Italiana', ...fontFamily.sans],
+      },
+
+      /* EDIT TAPE ANIMATION HERE */
       animation: {
         'tape-animation': 'tape-animation 1s linear infinite'
       },

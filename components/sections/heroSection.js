@@ -42,7 +42,7 @@ const HeroSection = () => {
                 transition={{ duration: 1, ease: 'easeInOut'}}
                 className='text-center pt-48 w-2/3 mx-auto'
                 >
-                    <h1 className= "font-extrabold text-black-strong text-4xl md:text-6xl lg:text-8xl tracking-wide font-montserrat">Seamless digital solutions crafted for <span className='font-italiana text-blue-light'>your success</span></h1>
+                    <h1 className= "font-semibold text-black-strong text-4xl md:text-6xl lg:text-8xl tracking-wide font-montserrat">Seamless digital solutions crafted for <span className='font-italiana text-blue-light'>your success</span></h1>
                     {/* <div className='absolute -bottom-7 md:-bottom-20 lg:-bottom-24 lg:right-0 w-full'>
                         <img src='/lines.png' alt="line" width={250} height={130} className="w-full object-contain"/>
                     </div> */}
