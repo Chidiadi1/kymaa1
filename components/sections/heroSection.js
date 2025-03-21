@@ -40,9 +40,9 @@ const HeroSection = () => {
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
-                className='text-center pt-48 w-2/3 mx-auto'
+                className='text-center pt-16 w-2/3 mx-auto'
                 >
-                    <h1 className= "font-semibold text-black-strong text-4xl md:text-6xl lg:text-8xl tracking-wide font-montserrat">Seamless digital solutions crafted for <span className='font-italiana text-blue-light'>your success</span></h1>
+                    <h1 className= "font-semibold text-black-strong text-5xl md:text-6xl lg:text-8xl font-montserrat">Seamless digital solutions crafted for <span className='font-italiana italic text-[#045fd0]'>your success</span></h1>
                     {/* <div className='absolute -bottom-7 md:-bottom-20 lg:-bottom-24 lg:right-0 w-full'>
                         <img src='/lines.png' alt="line" width={250} height={130} className="w-full object-contain"/>
                     </div> */}
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
-                className="mx-auto mt-20 flex items-center gap-3 text-md lg:text-lg border rounded-full bg-blue-light text-white-strong py-5 px-5 lg:px-7 lg:py-6 tracking-wider"
+                className="mx-auto mt-20 flex items-center gap-3 text-md lg:text-lg border rounded-full bg-[#045fd0] text-white-strong py-5 px-5 lg:px-7 lg:py-6 tracking-wider"
                  >Free consultation<span><FaArrowRight className="-rotate-45"/></span></motion.button>
             </div>
         </section>
