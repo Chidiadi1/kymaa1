@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import HeadingTags from "../utilities/headingTags";
 import ServiceCard from "../utilities/serviceCard";
-import { AppIcon, DesktopIcon, GraphicIcon, SeoIcon, WebsiteIcon } from '../utilities/icons.js';
+import { AppIcon, GraphicIcon, SeoIcon, WebsiteIcon } from '../utilities/icons.js';
 import { mobAppContent, mobAppTitle, webDevContent, webDevTitle, seoTitle, seoContent, graphicTitle, graphicContent } from "@/contents";
 
 const ServiceSection = () => {
@@ -14,9 +14,8 @@ const ServiceSection = () => {
             viewport={{once: true}}
             transition={{ duration: 1, ease: 'easeInOut'}}
             className="flex flex-col w-full items-center mb-20">
-                <HeadingTags icon={DesktopIcon} content={"Our Digital Playground"}/>
-                <hr className="border my-2 w-full"/>
-                <h2 className="text-black-strong text-[25px] font-bold lg:text-[55px] text-center">What We Do</h2>
+                <HeadingTags content={"OUR DIGITAL PLAYGROUND"}/>
+                <h2 className="text-black-strong text-3xl font-bold lg:text-6xl text-center">What We Do</h2>
             </motion.div>
 
             <div className="mt-6">

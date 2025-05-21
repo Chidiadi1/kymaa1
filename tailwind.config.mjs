@@ -15,19 +15,17 @@ export default {
     extend: {
       colors: {
         black: {
-          strong: '#242424',
+          strong: '#0b1c31',
           light: '#666666',
-          extraLight: '#d2d2d2'
+          extraLight: '#d3d3d3'
         },
         blue: {
           strong: '#00244e',
-          light: '#0678ff',
-          extraLight: '#93c5fd'
+          light: '#045fd0'
         },
         white: {
           normal: '#ffffff',
-          strong: '#f0f0f0',
-          light: '#a1a1aa'
+          strong: '#f0f0f0'
         }
       },
 

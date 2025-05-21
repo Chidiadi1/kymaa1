@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/layouts/navbar";
 import Footer from "@/components/layouts/footer";
-import { Montserrat, Italiana } from 'next/font/google'
+import { Montserrat, Italiana } from 'next/font/google';
 
 const montserrat = Montserrat({
   weight: ['400', '600'],

@@ -1,9 +1,8 @@
-const HeadingTags = ( {icon: Icon, content} ) => {
+const HeadingTags = ( {content} ) => {
 
     return (
-        <div className=" flex items-center">
-            <p className="flex items-center gap-2 px-3 py-2 text-[10px] lg:text-sm text-white-strong bg-black-strong rounded-full">
-                <span className="text-[20px] lg:text-[24px]"><Icon /></span>
+        <div className=" flex items-center mb-6">
+            <p className="tracking-widest text-xs lg:text-sm text-black-strong">
                 {content}
             </p>
         </div>

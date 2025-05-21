@@ -1,10 +1,9 @@
 import { FaFacebook, FaSearchLocation, FaPhone, FaEnvelope, FaTwitter, FaLinkedin, FaInstagram, } from 'react-icons/fa';
 
 export const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/contact", label: "Our Services" },
-    { href: "/contact", label: "Contact Us" }
+    { href: "/", label: "HOME" },
+    { href: "/about", label: "ABOUT US" },
+    { href: "/contact", label: "OUR SERVICES" }
 ]
 
 /* EDIT TAPE CAROUSEL CONTENTS HERE */
