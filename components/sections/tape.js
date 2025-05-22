@@ -10,7 +10,7 @@ const TapeCarousel = () => {
                         <div key={index} className="flex gap-6 lg:gap-8">
                             {tapeContent.map((word, idx) => (
                                 <div key={idx} className="inline-flex gap-4">
-                                    <h3 className="text-black-extraLight text-5xl lg:text-7xl">{word}</h3>
+                                    <h3 className="text-black-extraLight font-montserrat text-5xl lg:text-7xl">{word}</h3>
                                 </div>
                             ))}
                         </div>

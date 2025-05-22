@@ -42,7 +42,7 @@ const Navbar = () => {
                 <ul className="hidden lg:flex gap-10 tracking-wide">
                     {navLinks.map((link) => (
                         <motion.li key={link.label} whileHover={{scale: 1.1}}>
-                            <Link href={link.href} className="font-semibold text-sm text-blue-strong ">
+                            <Link href={link.href} className="font-semibold font-montserrat text-sm text-blue-strong ">
                                 {link.label}
                             </Link>
                         </motion.li>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
                 
                 <Link href='/' className="font-semibold text-sm hidden lg:block">
-                    <motion.p whileHover={{scale: 1.1}} className="bg-blue-light text-white-strong py-3 px-4 rounded-full">CONTACT US</motion.p>
+                    <motion.p whileHover={{scale: 1.1}} className="bg-blue-light font-montserrat text-white-strong py-3 px-4 rounded-full">CONTACT US</motion.p>
                 </Link>
             </div>
 
@@ -63,12 +63,12 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col items-center gap-10 mt-36">
                         {navLinks.map((link)=> (
-                            <Link key={link.label} href={link.href} className="text-md py-2 text-black-strong font-bold">
+                            <Link key={link.label} href={link.href} className="text-md py-2 text-black-strong font-bold font-montserrat">
                                 {link.label}
                             </Link>
                         ))}
                         <Link href='/' className="text-md">
-                            <motion.p whileHover={{scale: 1.1}} className="bg-blue-light text-white-strong py-4 px-5 rounded-full">CONTACT US</motion.p>
+                            <motion.p whileHover={{scale: 1.1}} className="bg-blue-light text-white-strong py-4 px-5 rounded-full font-montserrat">CONTACT US</motion.p>
                         </Link>
                     </div>
                 </motion.nav>

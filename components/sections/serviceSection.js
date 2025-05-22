@@ -15,7 +15,7 @@ const ServiceSection = () => {
             transition={{ duration: 1, ease: 'easeInOut'}}
             className="flex flex-col w-full items-center mb-20">
                 <HeadingTags content={"OUR DIGITAL PLAYGROUND"}/>
-                <h2 className="text-black-strong text-3xl font-bold lg:text-6xl text-center">What We Do</h2>
+                <h2 className="text-black-strong font-montserrat text-3xl font-bold lg:text-6xl text-center">What We Do</h2>
             </motion.div>
 
             <div className="mt-6">
@@ -25,10 +25,10 @@ const ServiceSection = () => {
                 viewport={{once: true}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
                 className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 mt-10">
-                    <ServiceCard icon={WebsiteIcon} title={webDevTitle} content={webDevContent} className="bg-[#ede0ea]"/>
-                    <ServiceCard icon={AppIcon} title={mobAppTitle} content={mobAppContent} className="bg-[#dcddf6]"/>
-                    <ServiceCard icon={SeoIcon} title={seoTitle} content={seoContent} className="bg-[#e2e5ed]"/>
-                    <ServiceCard icon={GraphicIcon} title={graphicTitle} content={graphicContent} className="bg-[#c7c5cb]"/>
+                    <ServiceCard icon={WebsiteIcon} title={webDevTitle} content={webDevContent} className="bg-gradient-to-l"/>
+                    <ServiceCard icon={AppIcon} title={mobAppTitle} content={mobAppContent} className="bg-gradient-to-l"/>
+                    <ServiceCard icon={SeoIcon} title={seoTitle} content={seoContent} className="bg-gradient-to-r"/>
+                    <ServiceCard icon={GraphicIcon} title={graphicTitle} content={graphicContent} className="bg-gradient-to-r"/>
                 </motion.div>
             </div>
         </section>
