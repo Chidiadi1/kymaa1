@@ -7,29 +7,28 @@ import { faqItems } from '@/contents';
 const FAQ = () => {
 
     return (
-        <section className='py-16 px-2 md:px-4 lg:px-8'>
+        <section className='py-16 px-2 md:px-4 lg:px-8 font-montserrat'>
             <motion.div 
             initial={{y: 100, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             viewport={{once: true}}
             transition={{ duration: 1, ease: 'easeInOut'}}
-            className="flex flex-col w-full items-center my-20">
-                <HeadingTags icon={FaqIcon} content={"FAQ"}/>
-                <hr className="border my-2 w-full"/>
-                <h2 className="text-black-strong text-[25px] font-bold lg:text-[55px] text-center">Because, You Need To Know</h2>
+            className="flex flex-col w-full items-center mt-20 mb-20 lg:mb-28">
+                <HeadingTags content={"FAQ"}/>
+                <h2 className="text-black-strong text-3xl font-semibold lg:text-6xl text-center">Because, You Need To Know</h2>
             </motion.div>
             {faqItems.map((item, index) => (
-                <Disclosure key={index} className="p-2 mb-6 border-b-2 border-black-extraLight md:w-2/3 mx-auto">
+                <Disclosure key={index} className="p-2 mb-6 border-b-2 border-blue-strong/10 md:w-2/3 mx-auto">
                     {({ open }) => (
                         <div>
                             <DisclosureButton className="group py-2 flex justify-between w-full focus:outline-0">
-                                <p className='text-left w-2/3 text-lg text-black-strong'>{item.q}</p>
-                                <FaqArrow className="text-blue-strong size-6 transition duration-500 ease-in-out group-data-[open]:rotate-180"/>
+                                <p className='text-left w-2/3 text-sm lg:text-lg text-black-strong'>{item.q}</p>
+                                <FaqArrow className="text-black-strong text-lg transition duration-500 ease-in-out group-data-[open]:rotate-180"/>
                             </DisclosureButton>
 
                             <AnimatePresence>
                                 {open && (
-                                    <DisclosurePanel static className="text-black-light text-md">
+                                    <DisclosurePanel static className="text-black-light text-sm">
                                         <motion.div
                                         initial={{opacity: 0, y: -20}}
                                         animate={{opacity: 1, y: 0}}
