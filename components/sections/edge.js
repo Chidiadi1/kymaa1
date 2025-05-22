@@ -5,7 +5,7 @@ import { edgeParagraph } from '@/contents';
 const Edge = () => {
 
     return (
-        <div className="mt-20 lg:mt-40 pb-16 lg:pb-32 px-2 md:px-4 lg:px-8">
+        <div className="mt-20 lg:mt-40 pb-16 lg:pb-32 px-2 md:px-4 lg:px-8 w-full">
             <div className='flex flex-col'>
                 <motion.div 
                 initial={{y: 100, opacity: 0}}
