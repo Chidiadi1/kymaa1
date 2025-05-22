@@ -13,9 +13,9 @@ const ServiceSection = () => {
             whileInView={{y: 0, opacity: 1}}
             viewport={{once: true}}
             transition={{ duration: 1, ease: 'easeInOut'}}
-            className="flex flex-col w-full items-center mb-10">
+            className="flex flex-col w-full items-center mb-20 lg:mb-28">
                 <HeadingTags content={"OUR DIGITAL PLAYGROUND"}/>
-                <h2 className="text-black-strong font-montserrat text-3xl font-bold lg:text-6xl text-center">What We Do</h2>
+                <h2 className="text-black-strong font-montserrat text-3xl font-semibold lg:text-6xl text-center">What We Do</h2>
             </motion.div>
 
             <div className="mt-6">

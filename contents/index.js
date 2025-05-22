@@ -44,9 +44,11 @@ export const ttmCardContent = [
     { name: "Ugochukwu Uwakwe", content: "Peekpile helped us source highly skilled software engineers and graphic designers from Africa at an incrediblse value. The quality of work and cost-effectiveness far exceeded our expectations, allowing us to scale quickly while staying within budget."}
 ]
 
+/* EDIT EDGE PARAGRAPH HERE */
+export const edgeParagraph = "We're not just a digital agency, we're your strategic partner. We blend creativity and tech expertise to deliver high-impact results. Our clients choose us because we bring clarity and build every project with precision. Our team is dedicated to making your vision thrive in a crowded digital world. We don't do one-size-fits-all, we tailor solutions that grow with you.";
+
 
 /* EDIT FAQ CONTENTS HERE */
-
 export const faqItems = [
     {
         q: "How long does it take to complete a project?", 

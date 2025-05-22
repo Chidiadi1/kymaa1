@@ -32,7 +32,7 @@ const Navbar = () => {
                     <Image src="/logo.png" alt="logo" width={100} height={100} className="object-contain"/>
                 </Link>
 
-                <div className="border-2 border-black-extraLight lg:hidden rounded-full p-2" onClick={() => setToggleMenu((prev) => !prev)}>
+                <div className="border border-blue-strong/10 lg:hidden rounded-full p-2" onClick={() => setToggleMenu((prev) => !prev)}>
                     <MdMenu className="text-2xl text-black-strong lg:hidden"/>
                 </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
             {/* MOBILE NAV */}
             {toggleMenu && (
                 <motion.nav aria-label="mobile" initial={{x: '100vw'}} animate={{x: 0}} transition={{delay: 0.1, type: 'spring'}} className="flex flex-col fixed top-0 w-full h-full z-50 bg-white-normal">
-                    <div className="flex justify-end mt-5 mr-5 border-2 rounded-full mx-auto max-w-fit border-black-extraLight p-2">
+                    <div className="flex justify-end mt-5 mr-5 border rounded-full mx-auto max-w-fit border-blue-strong/10 p-2">
                         <FaTimes className="text-2xl lg:hidden text-black-strong" onClick={() => setToggleMenu(false)}/>
                     </div>
                     <div className="flex flex-col items-center gap-10 mt-36">

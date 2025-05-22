@@ -52,7 +52,7 @@ const TestimonialCard = () => {
         >
           {ttmCardContent.map((item) => (
               <SwiperSlide key={item.name}>
-                  <div className="px-2 py-10 lg:py-20 md:px-8">
+                  <div className="px-2 pb-10 lg:pb-20 md:px-8">
                     <div className="flex flex-col gap-4">
                       <div className="pb-3">
                         <QuoteLeft className="text-black-strong size-14"/>

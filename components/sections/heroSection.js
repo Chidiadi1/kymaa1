@@ -40,21 +40,18 @@ const HeroSection = () => {
                 whileInView={{x: 0, opacity: 1}}
                 viewport={{once: true}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
-                className='text-center mt-44 lg:mt-56 w-3/4 mx-auto'
+                className='text-center mt-44 lg:mt-56 px-2 md:w-3/4 mx-auto'
                 >
-                    <h1 className= "font-semibold text-black-strong text-5xl md:text-5xl lg:text-7xl font-montserrat">Seamless digital solutions crafted for <span className='font-italiana italic text-blue-light'>your success</span></h1>
-                    {/* <div className='absolute -bottom-7 md:-bottom-20 lg:-bottom-24 lg:right-0 w-full'>
-                        <img src='/lines.png' alt="line" width={250} height={130} className="w-full object-contain"/>
-                    </div> */}
+                    <h1 className= "font-semibold text-black-strong text-5xl lg:text-7xl font-montserrat">Seamless digital solutions crafted for <span className='font-italiana italic text-blue-light'>your success</span></h1>
                 </motion.div>
 
-                <div className="text-center mt-10 md:mt-20 mx-4 flex justify-center  ">
+                <div className="mt-10 md:mt-20 mx-4">
                     <motion.h2
                     initial={{x: 100, opacity: 0}}
                     whileInView={{x: 0, opacity: 1}}
                     viewport={{once: true}}
                     transition={{ duration: 1, ease: 'easeInOut'}}
-                    className="text-black-strong text-md lg:text-xl items-center tracking-wide w-full max-w-screen-sm font-montserrat">We are your go-to digital agency. We collaborate closely with you to deliver tailored solutions that drive growth and set you apart.</motion.h2>
+                    className="text-black-strong text-md lg:text-xl text-center mx-auto max-w-xs md:max-w-xl font-montserrat">We are your go-to digital agency. We collaborate closely with you to deliver tailored solutions that drive growth and set you apart.</motion.h2>
                 </div>
                 <motion.button
                 initial={{x: -100, opacity: 0}}
