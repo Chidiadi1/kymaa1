@@ -66,29 +66,28 @@ const Stats = () => {
   };
 
   return (
-    <section className="bg-blue-strong px-2 py-16 mt-10 lg:px-8 relative z-0 overflow-clip">
-      <div className="inset-0 bg-[url('/grainy.jpeg')] bg-cover bg-center opacity-10 absolute -z-20"></div>
+    <section className="bg-blue-strong px-2 py-20 lg:px-8 overflow-clip font-montserrat text-white-normal">
       <motion.div
       initial={{ opacity: 0, x: 100 }}
       animate={controls}
-      className="flex flex-col text-center">
-        <h3 className="text-white-strong text-[25px] font-bold lg:text-[55px]">Proven Results, Measurable Success</h3>
-        <p className="text-white-light lg:mt-4">With a growing list of satisfied clients, our expertise speaks for itself.</p>
+      className="mx-auto text-center p-2">
+        <h3 className="text-3xl font-semibold lg:text-6xl">With a growing list of <span className="font-italiana italic">satisfied clients</span>, our expertise speaks for <span className="font-italiana italic">itself</span>.</h3>
       </motion.div>
-      <div ref={ref} className="mt-16">
+
+      <div ref={ref} className="mt-16 lg:mt-32">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {stats.map((stat, index) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 100 }}
-              animate={controls}
-              custom={index}
-              className="space-y-4"
+            key={index}
+            initial={{ opacity: 0, y: 100 }}
+            animate={controls}
+            custom={index}
+            className="space-y-4"
             >
-              <div className="text-5xl lg:text-8xl font-bold text-blue-extraLight">
+              <h3 className="text-3xl lg:text-6xl font-semibold">
                 <AnimatedNumber value={stat.value} unit={stat.unit} />
-              </div>
-              <p className="text-md text-white-light">{stat.text}</p>
+              </h3>
+              <p className="text-sm w-3/4 mx-auto md:text-left">{stat.text}</p>
             </motion.div>
           ))}
         </div>

@@ -6,7 +6,7 @@ import HeadingTags from "../utilities/headingTags";
 const TestimonialSection = () => {
 
   return (
-    <section className="py-10 lg:py-20 px-2 md:px-4 lg:px-8 bg-white-strong">
+    <section className="py-20 lg:py-40 px-2 md:px-4 lg:px-8 bg-white-strong">
       <motion.div 
       initial={{y: 100, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
