@@ -1,7 +1,8 @@
-import { FaDesktop, FaQuoteLeft, FaQuoteRight, FaQuestionCircle, FaArrowRight, FaPaintRoller } from 'react-icons/fa';
+import { FaDesktop, FaQuoteLeft, FaQuoteRight, FaQuestionCircle, FaArrowRight, FaArrowLeft, FaPaintRoller } from 'react-icons/fa';
 import { MdWidgets, MdNewspaper, MdScreenSearchDesktop, MdFactCheck, MdArrowRight, MdArrowLeft, MdArrowDownward } from "react-icons/md";
 
 export const AngleArrow = FaArrowRight;
+export const AngleArrowL = FaArrowLeft;
 export const DesktopIcon = FaDesktop;
 export const AppIcon = MdWidgets;
 export const WebsiteIcon = MdNewspaper;

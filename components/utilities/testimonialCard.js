@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { QuoteLeft, QuoteRight, ArrowRight, ArrowLeft } from "./icons";
+import { QuoteLeft, AngleArrow, AngleArrowL } from "./icons";
 import { ttmCardContent } from "@/contents";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
@@ -23,7 +23,7 @@ const TestimonialCard = () => {
   }, []);
 
     return (
-      <div className="relative">
+      <div className="w-full">
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={50}
@@ -52,29 +52,26 @@ const TestimonialCard = () => {
         >
           {ttmCardContent.map((item) => (
               <SwiperSlide key={item.name}>
-                  <div className="border-4  rounded-xl relative px-4 py-8 md:px-8 md:py-10">
+                  <div className="px-2 py-10 lg:py-20 md:px-8">
                     <div className="flex flex-col gap-4">
-                      <h3 className="text-black-light text-md italic z-10">{item.content}</h3>
-                      <p className="text-lg italic font-bold text-black-light">{item.name}</p>
-                    </div>
-                    <div className="absolute -top-1 -left-1 pr-6 pb-6 bg-white-normal">
-                      <QuoteLeft className="text-blue-extraLight size-8"/>
-                    </div>
-                    <div className="absolute -bottom-1 -right-1 pl-6 pt-6 bg-white-normal">
-                      <QuoteRight className="text-blue-extraLight size-8"/>
+                      <div className="pb-3">
+                        <QuoteLeft className="text-black-strong size-14"/>
+                      </div>
+                      <h3 className="text-black-strong font-montserrat text-sm italic">{item.content}</h3>
+                      <p className="text-lg font-italiana italic font-bold text-black-strong">{item.name}</p>
                     </div>
                   </div>
               </SwiperSlide>
           ))}
         </Swiper>
 
-          {/* Buttons to control slides */}
-        <div className="absolute -top-7 right-0 flex gap-2">
-          <button className="  custom-prev left-0 top-1/2 -translate-y-1/2 text-white   rounded-full z-10 bg-black-strong text-white-strong">
-            <ArrowLeft className="size-9"/>
+          {/* Buttons controlling slides */}
+        <div className="flex mt-2 gap-4 w-full justify-center">
+          <button className="custom-prev p-4 rounded-full bg-white-normal text-black-strong">
+            <AngleArrowL className="text-xl hover:text-blue-light"/>
           </button>
-          <button className="  custom-next right-0 top-1/2 -translate-y-1/2 text-white rounded-full z-10 bg-black-strong text-white-strong">
-            <ArrowRight className="size-9" />
+          <button className="custom-next  p-4 rounded-full bg-white-normal text-black-strong">
+            <AngleArrow className="text-xl hover:text-blue-light" />
           </button>
         </div>
       </div>

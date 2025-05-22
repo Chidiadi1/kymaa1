@@ -25,7 +25,7 @@ export default {
         },
         white: {
           normal: '#ffffff',
-          strong: '#f0f0f0'
+          strong: '#f9f9f9'
         }
       },
 

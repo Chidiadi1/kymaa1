@@ -7,13 +7,13 @@ import { mobAppContent, mobAppTitle, webDevContent, webDevTitle, seoTitle, seoCo
 const ServiceSection = () => {
 
     return (
-        <section className="mt-24 lg:mt-40 px-2 md:px-4 lg:px-8 overflow-clip">
+        <section className="mt-24 lg:mt-40 px-2 md:px-4 lg:px-8 py-8 overflow-clip">
             <motion.div
             initial={{y: 100, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             viewport={{once: true}}
             transition={{ duration: 1, ease: 'easeInOut'}}
-            className="flex flex-col w-full items-center mb-20">
+            className="flex flex-col w-full items-center mb-10">
                 <HeadingTags content={"OUR DIGITAL PLAYGROUND"}/>
                 <h2 className="text-black-strong font-montserrat text-3xl font-bold lg:text-6xl text-center">What We Do</h2>
             </motion.div>
