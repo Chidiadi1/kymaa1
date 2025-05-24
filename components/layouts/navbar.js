@@ -42,7 +42,7 @@ const Navbar = () => {
                 <ul className="hidden lg:flex gap-10 tracking-wide">
                     {navLinks.map((link) => (
                         <motion.li key={link.label} whileHover={{scale: 1.1}}>
-                            <Link href={link.href} className="font-semibold font-montserrat text-sm text-blue-strong ">
+                            <Link href={link.href} className="font-semibold font-montserrat text-sm text-black-strong ">
                                 {link.label}
                             </Link>
                         </motion.li>

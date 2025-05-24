@@ -13,7 +13,7 @@ const FAQ = () => {
             whileInView={{y: 0, opacity: 1}}
             viewport={{once: true}}
             transition={{ duration: 1, ease: 'easeInOut'}}
-            className="flex flex-col w-full items-center mt-20 mb-20 lg:mb-28">
+            className="flex flex-col w-full items-center mt-16 lg:mt-20 mb-16 lg:mb-28">
                 <HeadingTags content={"FAQ"}/>
                 <h2 className="text-black-strong text-3xl font-semibold lg:text-6xl text-center">Because, You Need To Know</h2>
             </motion.div>
