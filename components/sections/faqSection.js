@@ -18,7 +18,7 @@ const FAQ = () => {
                 <h2 className="text-black-strong text-3xl font-semibold lg:text-6xl text-center">Because, You Need To Know</h2>
             </motion.div>
             {faqItems.map((item, index) => (
-                <Disclosure key={index} className="p-2 mb-6 border-b-2 border-blue-strong/10 md:w-2/3 mx-auto">
+                <Disclosure key={index} className="p-2 mb-4 border-b-2 border-blue-strong/10 md:w-2/3 mx-auto">
                     {({ open }) => (
                         <div>
                             <DisclosureButton className="group py-2 flex justify-between w-full focus:outline-0">
