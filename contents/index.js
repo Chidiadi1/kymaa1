@@ -3,7 +3,7 @@ import { FaFacebook, FaSearchLocation, FaPhone, FaEnvelope, FaTwitter, FaLinkedi
 export const navLinks = [
     { href: "/", label: "HOME" },
     { href: "/about", label: "ABOUT US" },
-    { href: "/contact", label: "OUR SERVICES" }
+    { href: "/services", label: "OUR SERVICES" }
 ]
 
 /* EDIT TAPE CAROUSEL CONTENTS HERE */

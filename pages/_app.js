@@ -19,9 +19,11 @@ const italiana = Italiana({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${montserrat.variable} ${italiana.variable}`}>
-      <Navbar />
-      <Component {...pageProps}/>;
+    <main className={`min-h-screen flex flex-col justify-center ${montserrat.variable} ${italiana.variable}`}>
+      <Navbar />    
+      <div className="flex-1">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </main>
   )

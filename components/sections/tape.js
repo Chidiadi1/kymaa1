@@ -3,7 +3,7 @@ import { tapeContent } from "@/contents";
 const TapeCarousel = () => {
 
     return (
-        <div className="mt-24 lg:mt-40">
+        <div className="mt-16 lg:mt-32">
             <div className="flex overflow-x-clip [mask-image:linear-gradient(to_right, transparent, black_10%, black_90%, transparent)]">
                 <div className="flex flex-none gap-10 pr-4 lg:gap-16 animate-tape-animation [animation-duration:80s]">
                     {[...new Array(2)].fill(0).map((_, index) => (

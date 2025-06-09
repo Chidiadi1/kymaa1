@@ -7,7 +7,7 @@ import { mobAppContent, mobAppTitle, webDevContent, webDevTitle, seoTitle, seoCo
 const ServiceSection = () => {
 
     return (
-        <section className="mt-24 lg:mt-40 px-2 md:px-4 lg:px-8 py-8 overflow-clip">
+        <section className="mt-16 lg:mt-32 px-2 md:px-4 lg:px-8 py-8 overflow-clip">
             <motion.div
             initial={{y: 100, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}

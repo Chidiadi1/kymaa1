@@ -1,7 +1,7 @@
 import Button from "../utilities/button";
 import { motion } from 'framer-motion';
 
-const Contact = () => {
+const ContactS = () => {
 
     return (
         <motion.div 
@@ -22,4 +22,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default ContactS;

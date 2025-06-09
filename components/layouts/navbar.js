@@ -25,8 +25,8 @@ const Navbar = () => {
 
     return (
         <header className="w-full relative">
-            <div className={`lg:mx-auto flex justify-between items-center px-5 py-4 md:px-8 lg:px-16 bg-transparent fixed top-0 w-full z-40 transition-all duration-300 ${
-        scrolled ? 'bg-white-normal' : 'bg-transparent'
+            <div className={`lg:mx-auto flex justify-between items-center px-5 py-4 md:px-8 lg:px-16 bg-transparent w-full z-40 transition-all duration-200 ${
+        scrolled ? 'bg-white-normal fixed top-0' : 'bg-transparent absolute'
         }`}>
                 <Link href='/'>
                     <Image src="/logo.png" alt="logo" width={100} height={100} className="object-contain"/>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </ul>
 
                 
-                <Link href='/' className="font-semibold text-sm hidden lg:block">
+                <Link href='/contact' className="font-semibold text-sm hidden lg:block">
                     <motion.p whileHover={{scale: 1.1}} className="bg-blue-light font-montserrat text-white-strong py-3 px-4 rounded-full">CONTACT US</motion.p>
                 </Link>
             </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
                                 {link.label}
                             </Link>
                         ))}
-                        <Link href='/' className="text-md">
+                        <Link href='/contact' className="text-md">
                             <motion.p whileHover={{scale: 1.1}} className="bg-blue-light text-white-strong py-4 px-5 rounded-full font-montserrat">CONTACT US</motion.p>
                         </Link>
                     </div>
