@@ -63,11 +63,11 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-col items-center gap-10 mt-36">
                         {navLinks.map((link)=> (
-                            <Link key={link.label} href={link.href} className="text-md py-2 text-black-strong font-bold font-montserrat">
+                            <Link key={link.label} href={link.href} className="text-md py-2 text-black-strong font-bold font-montserrat" onClick={() => setToggleMenu(false)}>
                                 {link.label}
                             </Link>
                         ))}
-                        <Link href='/contact' className="text-md">
+                        <Link href='/contact' className="text-md" onClick={() => setToggleMenu(false)}>
                             <motion.p whileHover={{scale: 1.1}} className="bg-blue-light text-white-strong py-4 px-5 rounded-full font-montserrat">CONTACT US</motion.p>
                         </Link>
                     </div>
