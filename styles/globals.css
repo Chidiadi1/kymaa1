@@ -47,3 +47,15 @@ body {
   @apply bg-blue-500 w-5 h-5 opacity-100 scale-110 shadow-lg; 
   /* `scale-110` makes it bigger, `shadow-lg` adds a glow effect */
 }
+
+/* Form styling */
+.form-inputs {
+  @apply bg-white-strong py-3 px-5 rounded-xl;
+}
+.form-fields {
+  @apply flex flex-col gap-3 mt-7;
+}
+
+.form-font {
+  @apply text-sm;
+}
