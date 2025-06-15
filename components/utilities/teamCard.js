@@ -57,7 +57,7 @@ const TeamCard = () => {
                                 <img src={item.image} alt={item.name} width={100} height={100} className="w-full h-auto object-cover"/>
                             </div>
                             <h3 className="font-semibold mt-2 mb-1">{item.name}</h3>
-                            <p className="font-italiana italic">{item.title}</p>
+                            <p>{item.title}</p>
                         </div>
                   </div>
               </SwiperSlide>

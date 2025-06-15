@@ -1,4 +1,4 @@
-import { FaFacebook, FaSearchLocation, FaPhone, FaEnvelope, FaTwitter, FaLinkedin, FaInstagram, } from 'react-icons/fa';
+import { FaFacebook, FaSearchLocation, FaPhone, FaEnvelope, FaTwitter, FaLinkedin, FaInstagram, FaLightbulb, FaPuzzlePiece, FaStopwatch, FaTools, FaBrain, FaLink } from 'react-icons/fa';
 
 export const navLinks = [
     { href: "/", label: "HOME" },
@@ -84,5 +84,58 @@ export const teamCardItems = [
         name: 'Chidiadi Onwuzuruoha',
         title: 'Frontend Developer',
         image: '/images/chidiadi.jpg'
+    }
+]
+
+export const ourEdge = [
+    {
+        point: 'Strategic Foundation',
+        text: 'Every project starts with understanding your market and audience to deliver custom results.',
+        icon: <FaLightbulb />
+    },
+    {
+        point: 'Exclusive Builds',
+        text: 'Every solution is originally built to reflect the sophistication of your brand.',
+        icon: <FaPuzzlePiece />
+    },
+    {
+        point: 'Timely Precision',
+        text: 'We value your time. Our process delivers high-end results without compromising quality.',
+        icon: <FaStopwatch />
+    },
+    {
+        point: 'End-to-End Support',
+        text: 'From ideation to launch (and beyond), we got you covered.',
+        icon: <FaTools />
+    },
+    {
+        point: 'Creative Performance',
+        text: 'Our designs blend refined aesthetics with seamless functionality.',
+        icon: <FaBrain />
+    },
+    {
+        point: 'Clear Communication',
+        text: 'We keep you in the loop, so you are part of the process every step of the way.',
+        icon: <FaLink />
+    }
+]
+
+
+export const companyProfile = [
+    {
+        point: 'Our Mission',
+        text: 'At the heart of our mission is a desire to shape how modern businesses thrive in an increasingly digital world. We believe that technology, when driven by clarity and purpose, can transfrom how brands connect, grow, and lead in their industries. We are here to build experiences that matter, solutions that scale, and relationships that last. Our mission is not just a statement, it is a commitment to raising the standard for our clients and our team.'
+    },
+    {
+        point: 'Our Approach',
+        text: "Our work begins with listening. We immerse ourselves in our client's world, and from that understanding, we craft strategies that are intentional and results-driven. We don't rush into trends; we take a human-centered approach that blends aesthetic intuition with technical precision. Every decision is made to serve the bigger picture. For us, great service isn't just how it looks, it's how it works."
+    },
+    {
+        point: 'Driven by Talent',
+        text: "We are a growing force of young creatives and strategists who are passionate about making meaningful things. Our team isn't built on years in the industry, it is built on fresh perspectives, untamed creativity, and a shared hunger to do things differently. We come from diverse backgrounds but unite under a common mindset: build boldly and learn endlessly. We believe the future belongs to the daring, and that is why we're continously recruiting and nurturing emerging talent who want to make their mark and grow with something bigger than just a job."
+    },
+    {
+        point: 'Our Vision',
+        text: "We envision a digital future where originality wins, strategy leads, and creativity isn't compromised. Our goal is to become a global hub for bold ideas, a place where businesses of all sizes can find not solutions, but a creative partnership rooted in ambition and integrity. We see ourselves as catalysts for growth, pushing boundaries and inspiring the next generation of digital creators."
     }
 ]

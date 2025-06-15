@@ -15,8 +15,8 @@ export default function Contact() {
             transition={{ duration: 1, ease: 'easeInOut'}}
             className="text-3xl lg:text-6xl font-semibold">Talk to the team that gets it <span className="font-italiana italic">done.</span></motion.h3>
             <motion.p
-            initial={{y: -100, opacity: 0}}
-            whileInView={{y: 0, opacity: 1}}
+            initial={{x: 100, opacity: 0}}
+            whileInView={{x: 0, opacity: 1}}
             viewport={{once: true}}
             transition={{ duration: 1, ease: 'easeInOut'}}
             className="text-sm lg:text-lg mt-2">Have a Project in Mind? Let's Build It Together.</motion.p>
