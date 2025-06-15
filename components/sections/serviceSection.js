@@ -11,7 +11,7 @@ const ServiceSection = () => {
             <motion.div
             initial={{y: 100, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
-            viewport={{once: true}}
+            viewport={{once: false}}
             transition={{ duration: 1, ease: 'easeInOut'}}
             className="flex flex-col w-full items-center mb-20 lg:mb-28">
                 <HeadingTags content={"OUR DIGITAL PLAYGROUND"}/>
@@ -22,7 +22,7 @@ const ServiceSection = () => {
                 <motion.div
                 initial={{x: 100, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
-                viewport={{once: true}}
+                viewport={{once: false}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
                 className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 mt-10">
                     <ServiceCard icon={WebsiteIcon} title={webDevTitle} content={webDevContent} className="bg-gradient-to-l"/>

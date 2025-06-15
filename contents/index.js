@@ -2,7 +2,7 @@ import { FaFacebook, FaSearchLocation, FaPhone, FaEnvelope, FaTwitter, FaLinkedi
 
 export const navLinks = [
     { href: "/", label: "HOME" },
-    { href: "/about", label: "ABOUT US" },
+    { href: "/aboutUs", label: "ABOUT" },
     { href: "/services", label: "OUR SERVICES" }
 ]
 
@@ -65,5 +65,24 @@ export const faqItems = [
     {
         q: "Do you create custom designs, or do you use templates?", 
         a: "We specialize in custom designs tailored to your brand and vision. While templates can be an option for quicker delivery, we prioritize crafting unique, high-quality designs that set you apart."
+    }
+]
+
+/* EDIT TEAM CARD CONTENTS HERE */
+export const teamCardItems = [
+    {
+        name: 'Innocent Diwe',
+        title: 'Full Stack Developer',
+        image: '/images/innocent.jpg'
+    },
+    {
+        name: 'Jeremiah Ndubuisi',
+        title: 'Graphic Designer',
+        image: '/images/jeremiah.jpg'
+    },
+    {
+        name: 'Chidiadi Onwuzuruoha',
+        title: 'Frontend Developer',
+        image: '/images/chidiadi.jpg'
     }
 ]

@@ -7,7 +7,7 @@ const ContactS = () => {
         <motion.div 
         initial={{x: -100, opacity: 0}}
         whileInView={{x: 0, opacity: 1}}
-        viewport={{once: true}}
+        viewport={{once: false}}
         transition={{ duration: 1, ease: 'easeInOut'}}
         className="mt-6 lg:mt-12 py-10 lg:py-16 px-6 lg:px-10 md:px-8 mx-3 lg:mx-6 bg-blue-strong/15 rounded-xl flex flex-col gap-6 lg:flex-row justify-between font-montserrat text-black-strong">
             <div className="lg:w-3/5">

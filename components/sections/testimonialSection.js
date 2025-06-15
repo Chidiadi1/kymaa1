@@ -10,7 +10,7 @@ const TestimonialSection = () => {
       <motion.div 
       initial={{y: 100, opacity: 0}}
       whileInView={{y: 0, opacity: 1}}
-      viewport={{once: true}}
+      viewport={{once: false}}
       transition={{ duration: 1, ease: 'easeInOut'}}
       className="flex flex-col w-full items-center mt-10 mb-20 lg:mb-28">
           <HeadingTags content={"TESTIMONIALS"}/>

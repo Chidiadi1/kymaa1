@@ -5,20 +5,20 @@ import { edgeParagraph } from '@/contents';
 const Edge = () => {
 
     return (
-        <div className="mt-24 lg:mt-40 pb-16 lg:pb-32 px-2 md:px-4 lg:px-8 flex flex-col overflow-hidden font-montserrat">
+        <div className="mt-24 lg:mt-40 pb-16 lg:pb-32 px-4 lg:px-8 flex flex-col overflow-hidden font-montserrat">
             <motion.div 
             initial={{y: 100, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
-            viewport={{once: true}}
+            viewport={{once: false}}
             transition={{ duration: 1, ease: 'easeInOut'}}
             className="w-full mb-12 lg:mb-24">
                 <h2 className="text-black-strong text-3xl font-semibold lg:text-6xl">What Sets Us <span className="font-italiana italic">Apart</span></h2>
             </motion.div>
-            <div className='md:max-w-xl md:mx-auto md:justify-center '>
+            <div className='md:max-w-xl md:mx-auto md:justify-center overflow-hidden'>
                 <motion.h3
                 initial={{x: 100, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
-                viewport={{once: true}}
+                viewport={{once: false}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
                 className='text-sm lg:text-lg text-black-strong'>
                     {edgeParagraph}
