@@ -121,7 +121,7 @@ export const ourEdge = [
 ]
 
 
-export const companyProfile = [
+export const companyProfileText = [
     {
         point: 'Our Mission',
         text: 'At the heart of our mission is a desire to shape how modern businesses thrive in an increasingly digital world. We believe that technology, when driven by clarity and purpose, can transfrom how brands connect, grow, and lead in their industries. We are here to build experiences that matter, solutions that scale, and relationships that last. Our mission is not just a statement, it is a commitment to raising the standard for our clients and our team.'

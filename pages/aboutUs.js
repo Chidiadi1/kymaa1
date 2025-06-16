@@ -30,7 +30,7 @@ export default function AboutUS() {
         whileInView={{y: 0, opacity: 1}}
         viewport={{once: true}}
         transition={{ duration: 1, ease: 'easeInOut'}}
-        className="flex flex-col w-full items-center mt-16 lg:mt-28 mb-12 lg:mb-20">
+        className="flex flex-col w-full items-center mt-28 lg:mt-48 mb-10 lg:mb-20">
             <HeadingTags content={"THE TEAM"}/>
             <h2 className="text-3xl font-semibold lg:text-6xl text-center">Few of Us</h2>
         </motion.div>
@@ -38,26 +38,26 @@ export default function AboutUS() {
           <TeamCard />
         </div>
 
-        <div className='flex flex-col px-4 lg:px-8 mt-20 lg:mt-28 overflow-hidden'>
+        <div className='flex flex-col px-4 lg:px-8 mt-28 lg:mt-40'>
           <motion.h2
-          initial={{x: 100, opacity: 0}}
-          whileInView={{x: 0, opacity: 1}}
+          initial={{y: 100, opacity: 0}}
+          whileInView={{y: 0, opacity: 1}}
           viewport={{once: false}}
           transition={{ duration: 1, ease: 'easeInOut'}}
           className="text-xl lg:text-4xl font-semibold mb-6 lg:mb-10">Why clients stick <span className='font-italiana italic'>with us</span>.
           </motion.h2>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-x-32'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-x-32'>
             {ourEdge.map((item) => (
                 <motion.div key={item.point}
                 initial={{y: 100, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
                 viewport={{once: false}}
                 transition={{ duration: 1, ease: 'easeInOut'}}
-                className='flex gap-2'>
+                className='flex gap-2 w-4/5'>
                   <div className='bg-blue-light p-2 rounded-full h-fit text-center'>
                     <span className='text-white-strong size-6'>{item.icon}</span>
                   </div>
-                  <div className='text-sm'>
+                  <div className='text-sm lg:text-lg'>
                     <h3 className='font-semibold mb-2'>{item.point}</h3>
                     <p>{item.text}</p>
                   </div>
@@ -66,7 +66,7 @@ export default function AboutUS() {
           </div>
         </div>
 
-        <div>
+        <div className="mt-28 lg:mt-32">
           <CompanyProfile />
         </div>
       </section>
